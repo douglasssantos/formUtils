@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/*!
+ * Using framework Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
+ * Created by Douglas S. Santos
+ */
+
+.form-group {
+    margin-bottom: 1rem; }
+
+.input-group-text {
+    z-index: 9999;
+    border-right: 0;
+    padding-left: 10px;
+    padding-right: 10px; }
+
+.form-control {
+    border-radius: 0.5rem;
+    border-top-right-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+    border-left-width: 1px; }
+
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #fd5c70; }
+.d-block {
+    display: block !important; }
+
+.was-validated :valid ~ .valid-feedback,
+.was-validated :valid ~ .valid-tooltip,
+.is-valid ~ .valid-feedback,
+.is-valid ~ .valid-tooltip {
+    display: block; }
+
+.was-validated .form-control:valid, .form-control.is-valid {
+    border-color: #66d432;
+    padding-right: unset;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 8'%3e%3cpath fill='%2366d432' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem 1rem; }
+.was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+    border-color: #66d432;
+    box-shadow: 0 0 0 2px rgba(102, 212, 50, 0.25); }
+
+.was-validated textarea.form-control:valid, textarea.form-control.is-valid {
+    padding-right: unset;
+    background-position: top 0.75rem right 0.75rem; }
+
+.was-validated .form-select:valid, .form-select.is-valid {
+    border-color: #66d432; }
+.was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"] {
+    padding-right: 2.875rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 8'%3e%3cpath fill='%2366d432' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-position: right 0.75rem center, center right 1.75rem;
+    background-size: 16px 12px, 1rem 1rem; }
+.was-validated .form-select:valid:focus, .form-select.is-valid:focus {
+    border-color: #66d432;
+    box-shadow: 0 0 0 2px rgba(102, 212, 50, 0.25); }
+
+.was-validated .form-control-color:valid, .form-control-color.is-valid {
+    width: calc(3rem + unset); }
+
+.was-validated .form-check-input:valid, .form-check-input.is-valid {
+    border-color: #66d432; }
+.was-validated .form-check-input:valid:checked, .form-check-input.is-valid:checked {
+    background-color: #66d432; }
+.was-validated .form-check-input:valid:focus, .form-check-input.is-valid:focus {
+    box-shadow: 0 0 0 2px rgba(102, 212, 50, 0.25); }
+.was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
+    color: #66d432; }
+
+.form-check-inline .form-check-input ~ .valid-feedback {
+    margin-left: .5em; }
+
+.was-validated .input-group .form-control:valid, .input-group .form-control.is-valid,
+.was-validated .input-group .form-select:valid,
+.input-group .form-select.is-valid {
+    z-index: 1; }
+.was-validated .input-group .form-control:valid:focus, .input-group .form-control.is-valid:focus,
+.was-validated .input-group .form-select:valid:focus,
+.input-group .form-select.is-valid:focus {
+    z-index: 3; }
+
+.was-validated :invalid ~ .invalid-feedback,
+.was-validated :invalid ~ .invalid-tooltip,
+.is-invalid ~ .invalid-feedback,
+.is-invalid ~ .invalid-tooltip {
+    display: block; }
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+    border-color: #fd5c70;
+    padding-right: unset;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23fd5c70' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23fd5c70' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem 1rem; }
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
+    border-color: #fd5c70;
+    box-shadow: 0 0 0 2px rgba(253, 92, 112, 0.25); }
+
+.was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
+    padding-right: unset;
+    background-position: top 0.75rem right 0.75rem; }
+
+.was-validated .form-select:invalid, .form-select.is-invalid {
+    border-color: #fd5c70; }
+.was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
+    padding-right: 2.875rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23fd5c70' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23fd5c70' stroke='none'/%3e%3c/svg%3e");
+    background-position: right 0.75rem center, center right 1.75rem;
+    background-size: 16px 12px, 1rem 1rem; }
+.was-validated .form-select:invalid:focus, .form-select.is-invalid:focus {
+    border-color: #fd5c70;
+    box-shadow: 0 0 0 2px rgba(253, 92, 112, 0.25); }
+
+.was-validated .form-control-color:invalid, .form-control-color.is-invalid {
+    width: calc(3rem + unset); }
+
+.was-validated .form-check-input:invalid, .form-check-input.is-invalid {
+    border-color: #fd5c70; }
+.was-validated .form-check-input:invalid:checked, .form-check-input.is-invalid:checked {
+    background-color: #fd5c70; }
+.was-validated .form-check-input:invalid:focus, .form-check-input.is-invalid:focus {
+    box-shadow: 0 0 0 2px rgba(253, 92, 112, 0.25); }
+.was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
+    color: #fd5c70; }
+
+.form-check-inline .form-check-input ~ .invalid-feedback {
+    margin-left: .5em; }
+
+.was-validated .input-group .form-control:invalid, .input-group .form-control.is-invalid,
+.was-validated .input-group .form-select:invalid,
+.input-group .form-select.is-invalid {
+    z-index: 2; }
+.was-validated .input-group .form-control:invalid:focus, .input-group .form-control.is-invalid:focus,
+.was-validated .input-group .form-select:invalid:focus,
+.input-group .form-select.is-invalid:focus {
+    z-index: 3; }
+
+
+.form-control.is-invalid:focus {
+    box-shadow: 0 0 0 2px rgba(253, 92, 112, 0.6); }
+.form-control.is-valid:focus {
+    box-shadow: 0 0 0 2px rgba(102, 212, 50, 0.65); }
+
+.dark-version .input-group .is-valid,
+.dark-version .input-group .is-invalid {
+    border-color: rgba(255, 255, 255, 0.4) !important; }
